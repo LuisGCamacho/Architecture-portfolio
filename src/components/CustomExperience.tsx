@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase } from "lucide-react";
 
 const experience = [
     {
@@ -32,22 +32,6 @@ const experience = [
         role: "Técnico en Construcción",
         studio: "IPN — Centro de Estudios Científicos y Tecnológicos No. 7 “Cuauhtémoc”",
         description: ["Egresado como Técnico en Construcción."],
-    },
-];
-
-const education = [
-    {
-        period: "Agosto 2021 — Actualidad",
-        degree: "Ingeniería en ...",
-        institution: "IPN — ESIA Tecamachalco",
-        description: "Estudiante de noveno semestre.",
-    },
-    {
-        period: "Agosto 2018 — Agosto 2021",
-        degree: "Técnico en Construcción",
-        institution:
-            "IPN — Centro de Estudios Científicos y Tecnológicos No. 7 “Cuauhtémoc”",
-        description: "Egresado como Técnico en Construcción.",
     },
 ];
 
