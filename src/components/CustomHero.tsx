@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
+import heroImage from "../assets/hero-architecture.jpg";
+
 export const CustomHero = () => {
     const [zoomed, setZoomed] = useState(false);
 
@@ -16,7 +18,7 @@ export const CustomHero = () => {
                     zoomed ? "scale-105" : "scale-100"
                 }`}
                 style={{
-                    backgroundImage: "url('/src/assets/hero-architecture.jpg')",
+                    backgroundImage: `url(${heroImage})`,
                 }}
             />
 
