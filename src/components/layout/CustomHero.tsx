@@ -1,4 +1,3 @@
-import { ArrowRight, Download } from "lucide-react";
 import { useState } from "react";
 
 import heroImage from "../../assets/hero-architecture.jpg";
