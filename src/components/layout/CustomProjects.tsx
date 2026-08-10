@@ -48,10 +48,28 @@ export const CustomProjects = () => {
     };
 
     return (
-        <section className="bg-white py-20 sm:py-24" id="proyectos">
+        <section
+            id="proyectos"
+            className="
+
+                pb-12
+                pt-16
+                sm:pb-16
+                sm:pt-20
+            "
+        >
             <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
                 {/* HEADER */}
-                <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
+                <div
+                    className="
+                        flex
+                        flex-col
+                        justify-between
+                        gap-6
+                        sm:flex-row
+                        sm:items-end
+                    "
+                >
                     <div className="max-w-2xl">
                         <p
                             className="
@@ -67,7 +85,7 @@ export const CustomProjects = () => {
 
                         <h2
                             className="
-                                mt-4
+                                mt-3
                                 text-3xl
                                 font-medium
                                 leading-[1.05]
@@ -81,7 +99,7 @@ export const CustomProjects = () => {
 
                         <p
                             className="
-                                mt-5
+                                mt-4
                                 max-w-xl
                                 text-sm
                                 leading-6
@@ -146,7 +164,7 @@ export const CustomProjects = () => {
                 </div>
 
                 {/* FILTERS */}
-                <div className="mt-10 flex flex-wrap gap-2">
+                <div className="mt-8 flex flex-wrap gap-2">
                     {filters.map((filter) => {
                         const isActive = activeFilter === filter;
 
@@ -181,7 +199,7 @@ export const CustomProjects = () => {
                 </div>
 
                 {/* RESULTS COUNT */}
-                <div className="mt-8">
+                <div className="mt-6">
                     <p className="text-xs text-[#171717]/40">
                         {filteredProjects.length}{" "}
                         {filteredProjects.length === 1
@@ -193,7 +211,7 @@ export const CustomProjects = () => {
                 {/* PROJECT GRID */}
                 <div
                     className={`
-                        mt-5
+                        mt-4
                         grid
                         gap-4
                         transition-all
@@ -220,7 +238,7 @@ export const CustomProjects = () => {
 
                 {/* EMPTY STATE */}
                 {filteredProjects.length === 0 && (
-                    <div className="py-20 text-center">
+                    <div className="py-16 text-center">
                         <p className="text-sm text-[#171717]/45">
                             No hay proyectos en esta categoría.
                         </p>

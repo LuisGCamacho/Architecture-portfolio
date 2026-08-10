@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { useState } from "react";
 
 import heroImage from "../../assets/hero-architecture.jpg";
@@ -46,16 +46,18 @@ export const CustomHero = () => {
                         </p>
 
                         <div className="mt-7 flex flex-wrap gap-3">
+                            {/* Download CV */}
                             <a
-                                href="#obra"
+                                href="/Curriculum_David_Camacho.pdf"
+                                download="Curriculum_David_Camacho.pdf"
                                 className="inline-flex items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 text-sm font-medium text-black transition hover:bg-white/90"
                             >
-                                Experiencia
+                                Descargar CV
                                 <span className="grid h-8 w-8 place-items-center rounded-full bg-black text-white">
-                                    <ArrowRight className="h-4 w-4" />
+                                    <Download className="h-4 w-4" />
                                 </span>
                             </a>
-
+                            {/* Contact */}
                             <a
                                 href="#contacto"
                                 className="inline-flex items-center rounded-full border border-white/50 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
