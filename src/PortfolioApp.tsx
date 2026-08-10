@@ -1,8 +1,8 @@
-import { CustomAboutMe } from "./components/CustomAboutMe";
-import { CustomExperience } from "./components/CustomExperience";
-import { CustomHeader } from "./components/CustomHeader";
-import { CustomHero } from "./components/CustomHero";
-import { CustomProjects } from "./components/CustomProjects";
+import { CustomAboutMe } from "./components/layout/CustomAboutMe";
+import { CustomExperience } from "./components/layout/CustomExperience";
+import { CustomHeader } from "./components/layout/CustomHeader";
+import { CustomHero } from "./components/layout/CustomHero";
+import { CustomProjects } from "./components/layout/CustomProjects";
 
 function PortfolioApp() {
     return (

@@ -1,4 +1,4 @@
-import profileImage from "../assets/WhatsApp Image 2026-08-09 at 16.34.27.jpeg";
+import profileImage from "../../assets/WhatsApp Image 2026-08-09 at 16.34.27.jpeg";
 
 export const CustomAboutMe = () => {
     return (
