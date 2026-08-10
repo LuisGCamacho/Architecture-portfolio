@@ -38,7 +38,10 @@ const works = [
 
 export const CustomProjects = () => {
     return (
-        <section className="bg-[#f8f7f4] px-5 py-20 sm:px-8 lg:px-12">
+        <section
+            className="bg-[#f8f7f4] px-5 py-20 sm:px-8 lg:px-12"
+            id="proyectos"
+        >
             <div className="mx-auto max-w-7xl">
                 {/* ENCABEZADO */}
                 <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
