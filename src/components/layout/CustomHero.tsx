@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import heroImage from "../../assets/hero-architecture.jpg";
+import { Download } from "lucide-react";
 
 export const CustomHero = () => {
     const [zoomed, setZoomed] = useState(false);
