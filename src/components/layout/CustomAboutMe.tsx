@@ -1,4 +1,4 @@
-import profileImage from "../../assets/WhatsApp Image 2026-08-09 at 16.34.27.jpeg";
+import profileImage from "../../assets/AboutMeImage.jpeg";
 
 export const CustomAboutMe = () => {
     return (
@@ -10,7 +10,7 @@ export const CustomAboutMe = () => {
                         <img
                             src={profileImage}
                             alt="David Camacho"
-                            className="aspect-[4/5] h-full w-full object-cover object-center transition-transform duration-700 ease-in-out hover:scale-115"
+                            className="aspect-[4/5] h-full w-full object-cover object-center transition-transform duration-700 ease-in-out hover:scale-110"
                         />
 
                         {/* Detalle */}

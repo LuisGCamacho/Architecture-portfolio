@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import heroImage from "../../assets/hero-architecture.jpg";
+import heroImage2 from "/heroImage2.jpeg";
+
 import { Download } from "lucide-react";
 
 export const CustomHero = () => {
@@ -14,11 +15,11 @@ export const CustomHero = () => {
         >
             {/* Imagen */}
             <div
-                className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 ease-out ${
+                className={`absolute inset-0 bg-cover bg-center bg-no-repeat grayscale transition-transform duration-700 ease-out ${
                     zoomed ? "scale-105" : "scale-100"
                 }`}
                 style={{
-                    backgroundImage: `url(${heroImage})`,
+                    backgroundImage: `url(${heroImage2})`,
                 }}
             />
 
