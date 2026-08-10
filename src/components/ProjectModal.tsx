@@ -151,13 +151,13 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     gap-3
                     overflow-hidden
                     p-3
-                    shadow-2xl
                     sm:h-auto
                     sm:max-h-[92vh]
                     sm:rounded-[28px]
+                    md:h-[88vh]
+                    md:max-h-[760px]
+                    md:flex-row
                     lg:h-[82vh]
-                    lg:max-h-[760px]
-                    lg:flex-row
                 "
                 onClick={(event) => event.stopPropagation()}
             >
@@ -168,7 +168,7 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     aria-label="Cerrar proyecto"
                     className="
                         absolute
-                        right-5
+                        left-5
                         top-5
                         z-30
                         grid
@@ -200,12 +200,21 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                         overflow-hidden
                         rounded-2xl
                         bg-white
-                        lg:h-full
-                        lg:w-[55%]
+                        md:h-full
+                        md:w-[55%]
                     "
                 >
                     {/* Main image */}
-                    <div className="relative min-h-0 flex-1 overflow-hidden">
+                    <div
+                        className="
+                            relative
+                            min-h-0
+                            flex-1
+                            overflow-hidden
+                            rounded-b-2xl
+                            md:rounded-b-2xl
+                        "
+                    >
                         <img
                             src={selectedImage}
                             alt={project.name}
@@ -213,8 +222,10 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                                 h-full
                                 min-h-[320px]
                                 w-full
+                                rounded-b-2xl
                                 object-cover
                                 sm:min-h-[400px]
+                                md:min-h-0
                             "
                         />
 
@@ -320,7 +331,8 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                         min-h-0
                         flex-1
                         overflow-y-auto
-                        lg:w-[45%]
+                        md:w-[45%]
+                        md:flex-1
                     "
                 >
                     <div className="flex flex-col gap-3">
@@ -329,8 +341,9 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                             className="
                                 rounded-2xl
                                 bg-white
-                                p-6
+                                p-5
                                 sm:p-7
+                                md:p-6
                                 lg:p-8
                             "
                         >
@@ -373,6 +386,8 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                                     tracking-tight
                                     text-[#171717]
                                     sm:text-4xl
+                                    md:text-3xl
+                                    lg:text-4xl
                                 "
                             >
                                 {project.name}
@@ -404,8 +419,9 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                             className="
                                 rounded-2xl
                                 bg-white
-                                p-6
+                                p-5
                                 sm:p-7
+                                md:p-6
                                 lg:p-8
                             "
                         >
@@ -439,8 +455,9 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                             className="
                                 rounded-2xl
                                 bg-white
-                                p-6
+                                p-5
                                 sm:p-7
+                                md:p-6
                                 lg:p-8
                             "
                         >
@@ -467,10 +484,6 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                                             py-3
                                             text-sm
                                             text-[#171717]/65
-                                            transition-colors
-                                            duration-50
-                                            hover:bg-[#171717]
-                                            hover:text-white
                                         "
                                     >
                                         {technology}
