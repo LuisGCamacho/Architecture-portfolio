@@ -19,7 +19,7 @@ export const CustomFooter = () => {
                     </p>
 
                     <a
-                        href="mailto:correo@ejemplo.com"
+                        href="mailto:Jcamacho14@gmail.com"
                         className="
                             group
                             mt-5
